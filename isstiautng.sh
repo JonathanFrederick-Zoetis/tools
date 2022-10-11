@@ -10,6 +10,7 @@ arrayCommands=(
 "gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding ''"
 )
 
+DBUS_SESSION_INFO="-u vetscan DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus""
 
 # Iterate the string array using for loop
 for ((i = 0; i < ${#arrayCommands[@]}; i++))
