@@ -15,6 +15,6 @@ arrayCommands=(
 for ((i = 0; i < ${#arrayCommands[@]}; i++))
 do
     CmdLine="sudo ${DBUS_SESSION_INFO} ${arrayCommands[i]}"
-    execute_command "${CmdLine}"
+    ${CmdLine}
 done
 
